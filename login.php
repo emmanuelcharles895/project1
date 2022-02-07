@@ -1,8 +1,13 @@
-<?php include('server.php') ?>
+<?php 
+ini_set('display_error', '1');
+ini_set('display_startup_error', '1');
+error_reporting(E_ALL);
+?>
+<?php include "server.php";  ?>
 <!DOCTYPE html>
 <html>
 <head>
-<title>WELCOME TO THE DATABASE</title>
+<title>WELCOME</title>
 </head>
 <style>
         body{
@@ -32,21 +37,18 @@ cursor: pointer;
     <div class="header">
         <h2>Login</h2>
 </div>
-<form action="server.php" method="post">
+<form action="login.php" method="post">
             <div class="form">
             <div class="form-group">
-                <h2>Register here</h2>
+            <?php echo $usernameExist;?>
+                <h2>Registration</h2>
                 <label for="username">User Name</label>
-                <input type="text"class="form-control"id="firstname"name="firstname">
-            </div>
-            <label for="password">Password</label>
-            <input type="password"class="form-control"id="password"name="password">
-        </div>
-        <div class="input-group">
-        <button type="submit" class= "btn" name ="index_php">
+                <input type="email"name="email"id="email"placeholder="enter email" required>
+            <input type="password"name="password"id="password"placeholder="enter password" required>
+        <input type="submit" value= "Login" name ="login"class='btn'>
 </div>
 <p>
-    Not yet a member?<a href="index.php">Sign in</a>
+    Not yet a member?<a href="index.php">Register</a>
 </p>
 </form>
 </body>
