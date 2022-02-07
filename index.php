@@ -1,5 +1,5 @@
 <?php
-include ('server.php');
+include 'server.php';
 ?>
 <DOCTYPE html>
     <html>
@@ -16,7 +16,7 @@ include ('server.php');
 </nav>
 <div class ="container">
     <h1>WELCOME AT ESTATE MANAGEMENT SYSTEM</h1>
-    <h2><?php echo $_SESSION['email'];  ?></h2>
+    <h2><?php echo $_SESSION['success'];  ?></h2>
     <h2><?php echo $_SESSION['firstname'];  ?></h2>
 </div>
 </body>

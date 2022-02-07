@@ -1,0 +1,17 @@
+body{
+    background-position: center;
+    background-size: cover;
+    background-color: #ccc;
+    text-align: center;
+    display: block;
+}
+.form-control{
+    border-radius: 5px;
+    max-width: 700vh;
+    padding: 10px;
+    margin:15px auto ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid;
+}
